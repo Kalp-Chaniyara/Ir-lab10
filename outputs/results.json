@@ -1,0 +1,669 @@
+{
+  "dataset": {
+    "n_docs": 1400,
+    "n_queries": 225,
+    "n_qrels": 1837,
+    "n_eval_queries": 222,
+    "skipped_qids": [
+      31,
+      119,
+      215
+    ],
+    "mean_rel_per_query": 5.626126126126126
+  },
+  "tfidf": {
+    "vocab_size": 4170,
+    "shape": [
+      1400,
+      4170
+    ],
+    "nnz": 77560,
+    "sparsity": 0.9867146282973621,
+    "fit_time_s": 0.16323196899998038,
+    "query_shape": [
+      225,
+      4170
+    ],
+    "query_oov_terms": {
+      "validli": 1,
+      "trust": 1,
+      "multhopp": 1,
+      "stop": 1,
+      "unnecessarili": 1,
+      "virtu": 1,
+      "orthodox": 1,
+      "wildli": 1,
+      "realiti": 1
+    }
+  },
+  "lsa_k50": {
+    "explained_variance": 0.31153266940829116,
+    "energy": 0.34878111426738584,
+    "doc_shape": [
+      1400,
+      50
+    ],
+    "query_shape": [
+      225,
+      50
+    ],
+    "first10_component_evr": [
+      0.008357234983878307,
+      0.019387983138327868,
+      0.018168442220278382,
+      0.013199430628106513,
+      0.012545278755973195,
+      0.01190688236322082,
+      0.010300502654504886,
+      0.009955738577389765,
+      0.008981537772638283,
+      0.008383584075606123
+    ]
+  },
+  "cumulative_evr": {
+    "10": 0.12118661505495879,
+    "20": 0.18678105037771875,
+    "50": 0.31171425394000596,
+    "100": 0.43922448170976597,
+    "200": 0.5985435292021253,
+    "300": 0.7041956525263111,
+    "400": 0.7804293771272456,
+    "500": 0.8374611516566681,
+    "600": 0.8807742691478205
+  },
+  "top10_comparison": {
+    "mean_overlap": 5.225225225225225,
+    "mean_jaccard": 0.3770470546786337,
+    "rel_in_top10_tfidf": 439,
+    "rel_in_top10_lsa": 407,
+    "zero_rel_tfidf": 39,
+    "zero_rel_lsa": 52,
+    "rel_only_tfidf": 133,
+    "rel_only_lsa": 101
+  },
+  "per_query": {
+    "\u0394MAP": {
+      "better": 92,
+      "worse": 124,
+      "tied": 6
+    },
+    "\u0394nDCG@10": {
+      "better": 78,
+      "worse": 108,
+      "tied": 36
+    },
+    "\u0394P@5": {
+      "better": 40,
+      "worse": 72,
+      "tied": 110
+    }
+  },
+  "best_queries": [
+    {
+      "qid": 184,
+      "query": "work on small-oscillation re-entry motions .",
+      "MAP tfidf": 0.0952,
+      "MAP lsa": 0.6013,
+      "\u0394MAP": 0.5061,
+      "nDCG@10 tfidf": 0.0,
+      "nDCG@10 lsa": 0.7017,
+      "\u0394nDCG@10": 0.7017
+    },
+    {
+      "qid": 167,
+      "query": "exact solution methods for calculating the ablative mass loss of a material ablating ",
+      "MAP tfidf": 0.0857,
+      "MAP lsa": 0.375,
+      "\u0394MAP": 0.2893,
+      "nDCG@10 tfidf": 0.0,
+      "nDCG@10 lsa": 0.4796,
+      "\u0394nDCG@10": 0.4796
+    },
+    {
+      "qid": 180,
+      "query": "how does scale height vary with altitude in an atmosphere .",
+      "MAP tfidf": 0.2037,
+      "MAP lsa": 0.5271,
+      "\u0394MAP": 0.3234,
+      "nDCG@10 tfidf": 0.3543,
+      "nDCG@10 lsa": 0.8313,
+      "\u0394nDCG@10": 0.477
+    },
+    {
+      "qid": 165,
+      "query": "are the stable profiles of a compressible boundary layer induced by a moving wave kno",
+      "MAP tfidf": 0.3611,
+      "MAP lsa": 1.0,
+      "\u0394MAP": 0.6389,
+      "nDCG@10 tfidf": 0.5714,
+      "nDCG@10 lsa": 1.0,
+      "\u0394nDCG@10": 0.4286
+    },
+    {
+      "qid": 53,
+      "query": "what investigations have been made of the flow field about a body moving through a ra",
+      "MAP tfidf": 0.0486,
+      "MAP lsa": 0.2738,
+      "\u0394MAP": 0.2252,
+      "nDCG@10 tfidf": 0.0,
+      "nDCG@10 lsa": 0.3869,
+      "\u0394nDCG@10": 0.3869
+    },
+    {
+      "qid": 95,
+      "query": "what is the theoretical heat transfer distribution around a hemisphere .",
+      "MAP tfidf": 0.0769,
+      "MAP lsa": 0.2,
+      "\u0394MAP": 0.1231,
+      "nDCG@10 tfidf": 0.0,
+      "nDCG@10 lsa": 0.3869,
+      "\u0394nDCG@10": 0.3869
+    },
+    {
+      "qid": 114,
+      "query": "it is not likely that the airforces on a wing of general planform oscillating in tran",
+      "MAP tfidf": 0.0904,
+      "MAP lsa": 0.3804,
+      "\u0394MAP": 0.29,
+      "nDCG@10 tfidf": 0.2235,
+      "nDCG@10 lsa": 0.6087,
+      "\u0394nDCG@10": 0.3852
+    },
+    {
+      "qid": 154,
+      "query": "which  iterative method for solving linear elliptic difference equations is most rapi",
+      "MAP tfidf": 0.5833,
+      "MAP lsa": 1.0,
+      "\u0394MAP": 0.4167,
+      "nDCG@10 tfidf": 0.6199,
+      "nDCG@10 lsa": 1.0,
+      "\u0394nDCG@10": 0.3801
+    }
+  ],
+  "worst_queries": [
+    {
+      "qid": 136,
+      "query": "what are the results for the creep buckling of round tubes under external pressure .",
+      "MAP tfidf": 1.0,
+      "MAP lsa": 0.125,
+      "\u0394MAP": -0.875,
+      "nDCG@10 tfidf": 1.0,
+      "nDCG@10 lsa": 0.3155,
+      "\u0394nDCG@10": -0.6845
+    },
+    {
+      "qid": 148,
+      "query": "papers on small deflection theory for buckling of sandwich cylinders .",
+      "MAP tfidf": 0.4385,
+      "MAP lsa": 0.07,
+      "\u0394MAP": -0.3685,
+      "nDCG@10 tfidf": 0.6555,
+      "nDCG@10 lsa": 0.0,
+      "\u0394nDCG@10": -0.6555
+    },
+    {
+      "qid": 198,
+      "query": "is there any information available on the difference in the effects of various edge c",
+      "MAP tfidf": 0.4834,
+      "MAP lsa": 0.0904,
+      "\u0394MAP": -0.393,
+      "nDCG@10 tfidf": 0.6393,
+      "nDCG@10 lsa": 0.0,
+      "\u0394nDCG@10": -0.6393
+    },
+    {
+      "qid": 5,
+      "query": "what chemical kinetic system is applicable to hypersonic aerodynamic problems .",
+      "MAP tfidf": 0.42,
+      "MAP lsa": 0.0799,
+      "\u0394MAP": -0.3401,
+      "nDCG@10 tfidf": 0.5816,
+      "nDCG@10 lsa": 0.0,
+      "\u0394nDCG@10": -0.5816
+    },
+    {
+      "qid": 24,
+      "query": "what are the factors which influence the time required to invert large structural mat",
+      "MAP tfidf": 0.4789,
+      "MAP lsa": 0.1225,
+      "\u0394MAP": -0.3564,
+      "nDCG@10 tfidf": 0.721,
+      "nDCG@10 lsa": 0.1537,
+      "\u0394nDCG@10": -0.5673
+    },
+    {
+      "qid": 64,
+      "query": "can't the static deflection shapes be used in predicting flutter in place of vibratio",
+      "MAP tfidf": 0.6429,
+      "MAP lsa": 0.2159,
+      "\u0394MAP": -0.4269,
+      "nDCG@10 tfidf": 0.8603,
+      "nDCG@10 lsa": 0.3032,
+      "\u0394nDCG@10": -0.5572
+    },
+    {
+      "qid": 9,
+      "query": "papers on internal /slip flow/ heat transfer studies .",
+      "MAP tfidf": 1.0,
+      "MAP lsa": 0.3056,
+      "\u0394MAP": -0.6944,
+      "nDCG@10 tfidf": 1.0,
+      "nDCG@10 lsa": 0.4441,
+      "\u0394nDCG@10": -0.5559
+    },
+    {
+      "qid": 102,
+      "query": "basic dynamic characteristics of structures continuous over many spans .",
+      "MAP tfidf": 0.5043,
+      "MAP lsa": 0.0336,
+      "\u0394MAP": -0.4708,
+      "nDCG@10 tfidf": 0.4813,
+      "nDCG@10 lsa": 0.0,
+      "\u0394nDCG@10": -0.4813
+    }
+  ],
+  "overlap_buckets": [
+    {
+      "bucket": "0-20 %",
+      "pairs": 237,
+      "median_rank_tfidf": 397.0,
+      "median_rank_lsa": 188.0,
+      "lsa_ranks_higher": 0.7257383966244726
+    },
+    {
+      "bucket": "20-40 %",
+      "pairs": 413,
+      "median_rank_tfidf": 30.0,
+      "median_rank_lsa": 34.0,
+      "lsa_ranks_higher": 0.49878934624697335
+    },
+    {
+      "bucket": "40-60 %",
+      "pairs": 387,
+      "median_rank_tfidf": 13.0,
+      "median_rank_lsa": 16.0,
+      "lsa_ranks_higher": 0.3979328165374677
+    },
+    {
+      "bucket": "60-100 %",
+      "pairs": 212,
+      "median_rank_tfidf": 4.0,
+      "median_rank_lsa": 6.5,
+      "lsa_ranks_higher": 0.28773584905660377
+    }
+  ],
+  "k_table": [
+    {
+      "system": "TF-IDF",
+      "k (dims)": 4170,
+      "explained var.": 1.0,
+      "fit time (s)": 0.16323196899998038,
+      "query time (s)": 0.0259865410000657,
+      "P@5": 0.2738738738738739,
+      "MAP": 0.29115081303515333,
+      "MAP@10": 0.2441141126954619,
+      "nDCG@10": 0.349484382574777
+    },
+    {
+      "system": "LSA",
+      "k (dims)": 20,
+      "explained var.": 0.18674774998791052,
+      "fit time (s)": 0.12158050800007913,
+      "query time (s)": 0.05792704800001047,
+      "P@5": 0.17027027027027025,
+      "MAP": 0.20706572510545507,
+      "MAP@10": 0.15964367641450977,
+      "nDCG@10": 0.23397544641620743
+    },
+    {
+      "system": "LSA",
+      "k (dims)": 50,
+      "explained var.": 0.31153266940829116,
+      "fit time (s)": 0.2045319369999561,
+      "query time (s)": 0.03659478100007618,
+      "P@5": 0.2279279279279279,
+      "MAP": 0.2685470429981779,
+      "MAP@10": 0.21862181767935737,
+      "nDCG@10": 0.30667059092755716
+    },
+    {
+      "system": "LSA",
+      "k (dims)": 100,
+      "explained var.": 0.4388674686709724,
+      "fit time (s)": 0.44659334400012085,
+      "query time (s)": 0.03577840399998422,
+      "P@5": 0.26576576576576577,
+      "MAP": 0.30164120176831233,
+      "MAP@10": 0.2508862185598297,
+      "nDCG@10": 0.3530607637424844
+    },
+    {
+      "system": "LSA",
+      "k (dims)": 200,
+      "explained var.": 0.5978915261111379,
+      "fit time (s)": 0.7853463369999645,
+      "query time (s)": 0.03625406199989811,
+      "P@5": 0.28558558558558567,
+      "MAP": 0.3186581871435824,
+      "MAP@10": 0.2737545283378617,
+      "nDCG@10": 0.38172020928348266
+    },
+    {
+      "system": "LSA",
+      "k (dims)": 300,
+      "explained var.": 0.7036077743146404,
+      "fit time (s)": 1.2451899400000457,
+      "query time (s)": 0.03207273900011387,
+      "P@5": 0.2810810810810811,
+      "MAP": 0.3127131032294753,
+      "MAP@10": 0.2633513509257556,
+      "nDCG@10": 0.37056599057968953
+    }
+  ],
+  "seed_robustness_k50": {
+    "mean": {
+      "P@5": 0.23117117117117117,
+      "MAP": 0.26712267765314535,
+      "MAP@10": 0.21708716383617177,
+      "nDCG@10": 0.3058073178804038
+    },
+    "std": {
+      "P@5": 0.00296066247300091,
+      "MAP": 0.0016776061569436843,
+      "MAP@10": 0.0020175572809208453,
+      "nDCG@10": 0.0023146481610490863
+    }
+  },
+  "w2v": {
+    "sentences": 11413,
+    "tokens": 131618,
+    "vocab": 2697,
+    "train_time_s": {
+      "CBOW": 11.364130705999969,
+      "Skip-gram": 36.443241038999986
+    }
+  },
+  "w2v_neighbours": [
+    {
+      "term": "supersonic",
+      "freq": 629,
+      "CBOW top-5": "transonic (0.57), subsonic (0.54), traveling (0.53), uncambered (0.51), wakes (0.49)",
+      "Skip-gram top-5": "subsonic (0.56), overexpanded (0.54), intakes (0.53), spiked (0.52), uncambered (0.51)",
+      "shared": 2
+    },
+    {
+      "term": "turbulent",
+      "freq": 353,
+      "CBOW top-5": "separated (0.52), turbulence (0.50), laminar (0.48), zone (0.46), boundary (0.40)",
+      "Skip-gram top-5": "laminar (0.57), boundary (0.54), layer (0.51), turbulence (0.51), stabilization (0.51)",
+      "shared": 3
+    },
+    {
+      "term": "wing",
+      "freq": 641,
+      "CBOW top-5": "wings (0.68), cropped (0.61), tail (0.60), arrangements (0.59), flaps (0.56)",
+      "Skip-gram top-5": "wings (0.62), cropped (0.58), tail (0.58), tilt (0.58), tilting (0.57)",
+      "shared": 3
+    },
+    {
+      "term": "heat",
+      "freq": 749,
+      "CBOW top-5": "mass (0.47), isothermal (0.46), heating (0.46), shield (0.44), diffusion (0.43)",
+      "Skip-gram top-5": "transfer (0.79), shield (0.62), refractory (0.58), transpiration (0.54), protection (0.52)",
+      "shared": 1
+    },
+    {
+      "term": "shock",
+      "freq": 794,
+      "CBOW top-5": "bow (0.60), originating (0.55), detached (0.55), weak (0.52), blast (0.52)",
+      "Skip-gram top-5": "wave (0.67), attenuation (0.57), incident (0.57), driver (0.56), striking (0.56)",
+      "shared": 0
+    },
+    {
+      "term": "buckling",
+      "freq": 371,
+      "CBOW top-5": "deformations (0.64), wrinkling (0.60), buckle (0.53), columns (0.53), vessels (0.52)",
+      "Skip-gram top-5": "rings (0.61), unstiffened (0.60), postbuckling (0.58), unpressurized (0.58), stiffened (0.58)",
+      "shared": 0
+    },
+    {
+      "term": "aerofoil",
+      "freq": 35,
+      "CBOW top-5": "airfoil (0.49), wings (0.48), discs (0.48), delta (0.47), tapered (0.47)",
+      "Skip-gram top-5": "inverted (0.52), discs (0.52), split (0.52), tapered (0.50), mapping (0.50)",
+      "shared": 2
+    },
+    {
+      "term": "nozzle",
+      "freq": 200,
+      "CBOW top-5": "exit (0.64), nozzles (0.60), convergent (0.59), exhaust (0.56), converging (0.52)",
+      "Skip-gram top-5": "exit (0.65), laval (0.58), nozzles (0.57), throat (0.55), choked (0.54)",
+      "shared": 2
+    }
+  ],
+  "w2v_config_compare": {
+    "jaccard_top10_cbow_vs_sg": 0.20731228807312396,
+    "CBOW": {
+      "mean cos (related pairs)": 0.4645000100135803,
+      "mean cos (random pairs)": 0.05939999967813492,
+      "gap": 0.4050999879837036,
+      "train time (s)": 11.3641
+    },
+    "Skip-gram": {
+      "mean cos (related pairs)": 0.49149999022483826,
+      "mean cos (random pairs)": 0.19760000705718994,
+      "gap": 0.2939000129699707,
+      "train time (s)": 36.4432
+    }
+  },
+  "count_neighbours": [
+    {
+      "term": "supersonic",
+      "TF-IDF (same documents)": "flow (0.34), speeds (0.31), mach (0.30), theory (0.28), pressure (0.25)",
+      "PPMI (window co-occurrence)": "subsonic (0.33), speeds (0.31), wings (0.28), flow (0.28), bodies (0.28)",
+      "Skip-gram": "subsonic (0.56), overexpanded (0.54), intakes (0.53), spiked (0.52), uncambered (0.51)"
+    },
+    {
+      "term": "turbulent",
+      "TF-IDF (same documents)": "boundary (0.35), layer (0.34), layers (0.28), friction (0.26), laminar (0.25)",
+      "PPMI (window co-occurrence)": "laminar (0.37), boundary (0.35), layers (0.32), layer (0.31), transfer (0.24)",
+      "Skip-gram": "laminar (0.57), boundary (0.54), layer (0.51), turbulence (0.51), stabilization (0.51)"
+    },
+    {
+      "term": "wing",
+      "TF-IDF (same documents)": "wings (0.30), aspect (0.30), lift (0.30), combinations (0.30), body (0.29)",
+      "PPMI (window co-occurrence)": "wings (0.43), tail (0.35), chord (0.33), trailing (0.31), flaps (0.31)",
+      "Skip-gram": "wings (0.62), cropped (0.58), tail (0.58), tilt (0.58), tilting (0.57)"
+    },
+    {
+      "term": "heat",
+      "TF-IDF (same documents)": "transfer (0.83), temperature (0.40), conduction (0.39), laminar (0.35), stagnation (0.30)",
+      "PPMI (window co-occurrence)": "transfer (0.69), temperature (0.34), conduction (0.32), laminar (0.30), surface (0.28)",
+      "Skip-gram": "transfer (0.79), shield (0.62), refractory (0.58), transpiration (0.54), protection (0.52)"
+    },
+    {
+      "term": "shock",
+      "TF-IDF (same documents)": "wave (0.54), waves (0.47), interaction (0.29), detached (0.28), driver (0.27)",
+      "PPMI (window co-occurrence)": "wave (0.55), waves (0.43), tube (0.29), reflected (0.28), flow (0.27)",
+      "Skip-gram": "wave (0.67), attenuation (0.57), incident (0.57), driver (0.56), striking (0.56)"
+    },
+    {
+      "term": "buckling",
+      "TF-IDF (same documents)": "shells (0.45), columns (0.41), axial (0.38), compression (0.36), creep (0.35)",
+      "PPMI (window co-occurrence)": "shells (0.50), cylindrical (0.39), cylinders (0.37), plates (0.35), plastic (0.34)",
+      "Skip-gram": "rings (0.61), unstiffened (0.60), postbuckling (0.58), unpressurized (0.58), stiffened (0.58)"
+    },
+    {
+      "term": "aerofoil",
+      "TF-IDF (same documents)": "split (0.30), calculating (0.26), ground (0.24), formulae (0.24), aerofoils (0.21)",
+      "PPMI (window co-occurrence)": "split (0.19), calculate (0.18), rae (0.18), circle (0.18), deg (0.18)",
+      "Skip-gram": "inverted (0.52), discs (0.52), split (0.52), tapered (0.50), mapping (0.50)"
+    },
+    {
+      "term": "nozzle",
+      "TF-IDF (same documents)": "nozzles (0.52), exit (0.32), expanded (0.32), convergent (0.30), throat (0.30)",
+      "PPMI (window co-occurrence)": "exit (0.37), jet (0.31), nozzles (0.28), throat (0.28), diameters (0.26)",
+      "Skip-gram": "exit (0.65), laval (0.58), nozzles (0.57), throat (0.55), choked (0.54)"
+    }
+  ],
+  "pair_table": [
+    {
+      "pair": "supersonic \u2013 hypersonic",
+      "df(a)": 267,
+      "df(b)": 170,
+      "docs with both": 28,
+      "TF-IDF cos": 0.0863,
+      "PPMI cos": 0.1822,
+      "LSA k=100 cos": 0.0879,
+      "CBOW cos": 0.467,
+      "Skip-gram cos": 0.409
+    },
+    {
+      "pair": "laminar \u2013 turbulent",
+      "df(a)": 233,
+      "df(b)": 127,
+      "docs with both": 70,
+      "TF-IDF cos": 0.2475,
+      "PPMI cos": 0.3687,
+      "LSA k=100 cos": 0.258,
+      "CBOW cos": 0.485,
+      "Skip-gram cos": 0.5662
+    },
+    {
+      "pair": "aerofoil \u2013 airfoil",
+      "df(a)": 18,
+      "df(b)": 53,
+      "docs with both": 1,
+      "TF-IDF cos": 0.0131,
+      "PPMI cos": 0.147,
+      "LSA k=100 cos": -0.0324,
+      "CBOW cos": 0.4881,
+      "Skip-gram cos": 0.2865
+    },
+    {
+      "pair": "wing \u2013 aerofoil",
+      "df(a)": 181,
+      "df(b)": 18,
+      "docs with both": 4,
+      "TF-IDF cos": 0.0354,
+      "PPMI cos": 0.1333,
+      "LSA k=100 cos": 0.0798,
+      "CBOW cos": 0.456,
+      "Skip-gram cos": 0.3804
+    },
+    {
+      "pair": "temperature \u2013 heat",
+      "df(a)": 250,
+      "df(b)": 254,
+      "docs with both": 138,
+      "TF-IDF cos": 0.3992,
+      "PPMI cos": 0.3414,
+      "LSA k=100 cos": 0.5107,
+      "CBOW cos": 0.3823,
+      "Skip-gram cos": 0.4731
+    },
+    {
+      "pair": "cylinder \u2013 cone",
+      "df(a)": 131,
+      "df(b)": 92,
+      "docs with both": 22,
+      "TF-IDF cos": 0.1423,
+      "PPMI cos": 0.349,
+      "LSA k=100 cos": 0.0878,
+      "CBOW cos": 0.3837,
+      "Skip-gram cos": 0.4241
+    },
+    {
+      "pair": "buckling \u2013 shells",
+      "df(a)": 120,
+      "df(b)": 85,
+      "docs with both": 51,
+      "TF-IDF cos": 0.4492,
+      "PPMI cos": 0.5047,
+      "LSA k=100 cos": 0.4273,
+      "CBOW cos": 0.4437,
+      "Skip-gram cos": 0.5731
+    },
+    {
+      "pair": "shock \u2013 wave",
+      "df(a)": 237,
+      "df(b)": 168,
+      "docs with both": 117,
+      "TF-IDF cos": 0.5378,
+      "PPMI cos": 0.5474,
+      "LSA k=100 cos": 0.7192,
+      "CBOW cos": 0.3452,
+      "Skip-gram cos": 0.674
+    },
+    {
+      "pair": "nozzle \u2013 jet",
+      "df(a)": 71,
+      "df(b)": 92,
+      "docs with both": 26,
+      "TF-IDF cos": 0.2672,
+      "PPMI cos": 0.3077,
+      "LSA k=100 cos": 0.246,
+      "CBOW cos": 0.4747,
+      "Skip-gram cos": 0.4789
+    },
+    {
+      "pair": "viscous \u2013 inviscid",
+      "df(a)": 122,
+      "df(b)": 79,
+      "docs with both": 28,
+      "TF-IDF cos": 0.2743,
+      "PPMI cos": 0.21,
+      "LSA k=100 cos": 0.5578,
+      "CBOW cos": 0.5462,
+      "Skip-gram cos": 0.4709
+    },
+    {
+      "pair": "lift \u2013 drag",
+      "df(a)": 134,
+      "df(b)": 136,
+      "docs with both": 58,
+      "TF-IDF cos": 0.415,
+      "PPMI cos": 0.4784,
+      "LSA k=100 cos": 0.5301,
+      "CBOW cos": 0.4489,
+      "Skip-gram cos": 0.6107
+    },
+    {
+      "pair": "plate \u2013 plates",
+      "df(a)": 184,
+      "df(b)": 72,
+      "docs with both": 29,
+      "TF-IDF cos": 0.1534,
+      "PPMI cos": 0.2951,
+      "LSA k=100 cos": 1.0,
+      "CBOW cos": 0.6528,
+      "Skip-gram cos": 0.5516
+    }
+  ],
+  "similarity_correlation": {
+    "TF-IDF": {
+      "TF-IDF": 1.0,
+      "PPMI": 0.664,
+      "CBOW": 0.3683,
+      "Skip-gram": 0.4032
+    },
+    "PPMI": {
+      "TF-IDF": 0.664,
+      "PPMI": 1.0,
+      "CBOW": 0.5419,
+      "Skip-gram": 0.5155
+    },
+    "CBOW": {
+      "TF-IDF": 0.3683,
+      "PPMI": 0.5419,
+      "CBOW": 1.0,
+      "Skip-gram": 0.6622
+    },
+    "Skip-gram": {
+      "TF-IDF": 0.4032,
+      "PPMI": 0.5155,
+      "CBOW": 0.6622,
+      "Skip-gram": 1.0
+    }
+  }
+}
